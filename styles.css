@@ -40,12 +40,22 @@ td {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-#options img{
+#options img, td img{
     width: 150px;
     border-radius: 50%;
 }
 #options img:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    #options img, td img{
+        width: 90px;
+    }
+    td{
+        height: 125px;
+    }
 }
